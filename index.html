@@ -9,7 +9,10 @@
     
 </head>
 <body>
-    <p>Hello, {{ user }}</p>
-    <input type="text" name="" id="" ng-model="user">
+    <div ng-init="number = 0">
+            <button ng-click="number = number + 1">+1</button>
+            <button ng-click="number = number - 1">-1</button>
+            <p>{{ number }}</p>
+    </div>
 </body>
 </html>
