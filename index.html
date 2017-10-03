@@ -9,7 +9,8 @@
     
 </head>
 <body>
-    Show the paragraph<input type="checkbox" ng-model="isChecked">
-    <p ng-if="isChecked">Here is the secret paragraph</p>
+    <div ng-init="amount = 1250.50">
+        <p> {{ amount | currency }} </p>
+    </div>
 </body>
 </html>
